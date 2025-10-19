@@ -1,3 +1,4 @@
+git config --global core.autocrlf true
 # Instalación del Proyecto Laravel con Breeze y React
 
 ## Fecha de Instalación
