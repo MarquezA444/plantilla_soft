@@ -1,0 +1,37 @@
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
+import TareasForm from '@/Components/Tareas/TareasForm';
+import { Head } from '@inertiajs/react';
+
+export default function Create({ auth }) {
+    return (
+        <AuthenticatedLayout user={auth.user}>
+            <Head title="Crear Tarea" />
+
+            <div className="py-12">
+                <div className="max-w-3xl mx-auto sm:px-6 lg:px-8">
+                    <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                        <div className="p-6">
+                            <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+                                Crear Nueva Tarea
+                            </h2>
+
+                            <TareasForm
+                                initialData={{
+                                    titulo: '',
+                                    descripcion: '',
+                                    estado: 'pendiente',
+                                    prioridad: 'media',
+                                    fecha_vencimiento: '',
+                                    responsable: ''
+                                }}
+                                submitUrl="/tareas"
+                                submitMethod="post"
+                                buttonText="Crear Tarea"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </AuthenticatedLayout>
+    );
+}
