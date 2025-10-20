@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 namespace Tests\Feature\Auth;
 
 use App\Models\User;
@@ -42,3 +43,35 @@ class PasswordConfirmationTest extends TestCase
         $response->assertSessionHasErrors();
     }
 }
+=======
+use App\Models\User;
+
+test('confirm password screen can be rendered', function () {
+    $user = User::factory()->create();
+
+    $response = $this->actingAs($user)->get('/confirm-password');
+
+    $response->assertStatus(200);
+});
+
+test('password can be confirmed', function () {
+    $user = User::factory()->create();
+
+    $response = $this->actingAs($user)->post('/confirm-password', [
+        'password' => 'password',
+    ]);
+
+    $response->assertRedirect();
+    $response->assertSessionHasNoErrors();
+});
+
+test('password is not confirmed with invalid password', function () {
+    $user = User::factory()->create();
+
+    $response = $this->actingAs($user)->post('/confirm-password', [
+        'password' => 'wrong-password',
+    ]);
+
+    $response->assertSessionHasErrors();
+});
+>>>>>>> edc3b9d795f4ebfa000c4dbd0f8af1ca259e1cda

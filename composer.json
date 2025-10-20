@@ -8,7 +8,10 @@
     "require": {
         "php": "^8.2",
         "inertiajs/inertia-laravel": "^2.0",
+<<<<<<< HEAD
         "laravel/breeze": "^2.3",
+=======
+>>>>>>> edc3b9d795f4ebfa000c4dbd0f8af1ca259e1cda
         "laravel/framework": "^12.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.10.1",
@@ -16,12 +19,21 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
+<<<<<<< HEAD
+=======
+        "laravel/breeze": "^2.3",
+>>>>>>> edc3b9d795f4ebfa000c4dbd0f8af1ca259e1cda
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.24",
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
+<<<<<<< HEAD
         "phpunit/phpunit": "^11.5.3"
+=======
+        "pestphp/pest": "^3.8",
+        "pestphp/pest-plugin-laravel": "^3.2"
+>>>>>>> edc3b9d795f4ebfa000c4dbd0f8af1ca259e1cda
     },
     "autoload": {
         "psr-4": {

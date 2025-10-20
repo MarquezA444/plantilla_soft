@@ -1,10 +1,15 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
+<<<<<<< HEAD
 import { Head, Link } from '@inertiajs/react';
+=======
+import { Head } from '@inertiajs/react';
+>>>>>>> edc3b9d795f4ebfa000c4dbd0f8af1ca259e1cda
 
 export default function Dashboard() {
     return (
         <AuthenticatedLayout
             header={
+<<<<<<< HEAD
              <div className="flex items-center px-4">
                <Link
                             href={route('tareas.create')}
@@ -22,6 +27,11 @@ export default function Dashboard() {
 
                         
                 </div>
+=======
+                <h2 className="text-xl font-semibold leading-tight text-gray-800">
+                    Dashboard
+                </h2>
+>>>>>>> edc3b9d795f4ebfa000c4dbd0f8af1ca259e1cda
             }
         >
             <Head title="Dashboard" />
@@ -30,6 +40,7 @@ export default function Dashboard() {
                 <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg">
                         <div className="p-6 text-gray-900">
+<<<<<<< HEAD
                            
 
 <div className="relative overflow-x-auto">
@@ -97,6 +108,9 @@ export default function Dashboard() {
     </table>
 </div>
 
+=======
+                            You're logged in!
+>>>>>>> edc3b9d795f4ebfa000c4dbd0f8af1ca259e1cda
                         </div>
                     </div>
                 </div>
